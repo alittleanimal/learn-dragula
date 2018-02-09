@@ -72,3 +72,27 @@ export class ExampleBComponent {
         this.removeClass(el, 'ex-over');
       }
 }
+
+@Component({
+    selector: 'another-example',
+    templateUrl: './templates/another-example.html'
+  })
+  export class AnotherExampleComponent {
+    public constructor(private dragulaService:DragulaService) {
+      dragulaService.setOptions('third-bag', {
+        removeOnSpill: true
+      });
+    }
+  }
+
+@Component({
+    selector: 'such-example',
+    templateUrl: './templates/such-example.html'
+})
+export class SuchExampleComponent {
+    public constructor(private dragularService: DragulaService) {
+        dragularService.setOptions('fourth-bag', {
+            revertOnSpill: true
+        })
+    }
+}

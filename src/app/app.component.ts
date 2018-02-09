@@ -7,6 +7,8 @@ import { DragulaService } from 'ng2-dragula'
     <div class="examples">
       <example-a></example-a>
       <example-b></example-b>
+      <another-example></another-example>
+      <such-example></such-example>
     </div>
   `,
   encapsulation: ViewEncapsulation.None

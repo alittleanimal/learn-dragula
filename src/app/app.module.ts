@@ -4,14 +4,16 @@ import { DragulaModule } from 'ng2-dragula'
 
 
 import { AppComponent } from './app.component';
-import { ExampleAComponent, ExampleBComponent } from './examples';
+import { ExampleAComponent, ExampleBComponent, SuchExampleComponent, AnotherExampleComponent } from './examples';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleAComponent,
-    ExampleBComponent
+    ExampleBComponent,
+    SuchExampleComponent,
+    AnotherExampleComponent
   ],
   imports: [
     BrowserModule,
